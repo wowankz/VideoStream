@@ -1,0 +1,9 @@
+<div class="d-flex flex-row">
+    <div style="cursor: pointer;font-size: 0.5rem" class=" align-self-center  pl-0 pr-0" data-toggle="tooltip" title="Вкл/Выкл звук">
+        <fa-icon (click)="setMute()" [icon]="muteState ? ['fas', 'volume-mute'] : volumeIcon"  size="3x" [fixedWidth]="true">5</fa-icon>
+    </div>
+
+    <div class="align-self-center mr-1 ">
+        <input (change)="change($event)" (input)="input($event)" class="align-self-center " id="vl" style="cursor: pointer;" type="range" min="0" max="100" step="1" value="{{levelVolume}}">
+    </div>
+</div>

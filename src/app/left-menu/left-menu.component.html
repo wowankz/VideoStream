@@ -1,0 +1,21 @@
+<div class="h-100 justify-content-center d-flex flex-shrink-1  ">
+    <div class=" d-flex align-items-start flex-column left-menu bg-light shadow">
+
+        <div class="p-1 pb-2">
+            <a routerLink="/player" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                <fa-icon [icon]="['fas', 'video'] " size="3x" [fixedWidth]="true"></fa-icon>
+            </a>
+        </div>
+        <div class="p-1 pb-2">
+            <a routerLink="/devices" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                <fa-icon [icon]="['fas', 'desktop']" size="3x" [fixedWidth]="true"></fa-icon>
+            </a>
+        </div>
+        <div class="p-1 pb-2 mt-auto">
+            <a routerLink="/settings" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                <fa-icon [icon]="['fas', 'cog']" size="3x" [fixedWidth]="true"></fa-icon>
+            </a>
+        </div>
+
+    </div>
+</div>

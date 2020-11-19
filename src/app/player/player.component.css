@@ -1,0 +1,91 @@
+.player {
+    /* background: url(/assets/music_player.png) #f8f9fa5e; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    /* background-color: #ecf4f6; */
+}
+
+.poster {
+    /* width: 35%; 
+    background: url(/assets/Lostfilm.png);  
+    background-color: #5b6b89;*/
+    background-size: contain !important;
+    /* background-repeat: repeat;
+    background-position: center; */
+    z-index: 1001 !important;
+}
+
+.quality-icon {
+    font-size: 0.95rem;
+}
+
+.control-panel {
+    margin-left: -8.5%;
+    height: 80%;
+    /* background-color: #5a6a7a; */
+}
+
+.media-title {
+    position: relative;
+    height: 1.2rem;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    /* margin: 0 auto; */
+    white-space: nowrap;
+    overflow: hidden;
+    /*   padding-left: 0.8em; */
+}
+
+.media-title span {
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 15s infinite linear;
+    -moz-animation: scroll 15s infinite linear;
+    animation: scroll 15s infinite linear;
+    position: absolute;
+}
+
+.media-title span:hover {
+    animation-play-state: paused;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+
+@-moz-keyframes scroll {
+    0% {
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -moz-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+}
+
+.h-55 {
+    height: 55% !important;
+}
+
+.h-15 {
+    height: 15% !important;
+}

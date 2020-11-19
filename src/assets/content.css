@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'RussellSquare';
+    src: url("../RussellSquare.otf") format("opentype");
+    font-display: swap;
+}
+
+#reModal{
+    font-size: 1.3rem;
+    font-family: 'RussellSquare' !important;
+}
+
+.bg-my-gray{
+    background: rgb(184,198,223) !important; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(184,198,223,1) 0%, rgba(109,136,183,1) 100%) !important ; /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(184,198,223,1) 0%,rgba(109,136,183,1) 100%) !important ; /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(184,198,223,1) 0%,rgba(109,136,183,1) 100%) !important ; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8c6df', endColorstr='#6d88b7',GradientType=1 ) !important ; /* IE6-9 fallback on horizontal gradient */
+}
+.text-shadow{
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: #5b6b89;
+    text-shadow: 1px 1px 0px #fffafa30;
+}

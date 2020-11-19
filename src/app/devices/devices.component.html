@@ -1,0 +1,31 @@
+<div class="d-flex flex-row h-100" style="min-height: 9rem">
+    <div class="card  border-0 w-100 d-flex text-center">
+        <h6 class="card-header bg-my-gray  border-0 pb-2 pt-2"><strong class="text-shadow">{{titleCard}}</strong></h6>
+        <div class="card-body align-self-center w-100 p-1">
+            <figure *ngIf="search" class="figure m-0">
+                <img height="90rem" src="/assets/search.gif">
+                <figcaption [ngClass]="{blink:error}" class="figure-caption ">Search devices</figcaption>
+            </figure>
+            <!-- <fa-icon *ngIf="search" [icon]="['fas', 'spinner'] " [spin]="true" size="4x" [fixedWidth]="true"></fa-icon> -->
+            <div class="d-flex flex-column w-100 " *ngFor="let device of devices">
+                <div *ngIf="!search" class="border rounded w-100 bg-light d-flex flex-row mb-1 " style="cursor: pointer"
+                    (click)="onSelect(device)">
+                    <div class="p-2 bd-highlight"><img src="/assets/Samsung-HU9000@2x.png" height="60rem"></div>
+                    <div class="p-2 flex-grow-1 bd-highlight align-self-center  ">
+                        <p class="m-0 " style="word-break: break-all">{{device.name}}</p>
+                    </div>
+                    <div class="p-2 ml-auto bd-highlight align-self-center ">
+                        <div class="text-muted">
+                            <fa-icon *ngIf="current !== device.uuid " [icon]="['far', 'circle'] " size="2x"
+                                [fixedWidth]="true"></fa-icon>
+                        </div>
+                        <div class="text-success">
+                            <fa-icon *ngIf="current == device.uuid " [icon]="['far', 'check-circle'] " size="2x"
+                                [fixedWidth]="true"></fa-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

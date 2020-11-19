@@ -1,0 +1,7 @@
+<div class="d-flex flex-column align-items-start alert  mb-0" role="alert" style="min-height: 9rem">
+    <div class="d-flex align-items-center w-100">
+        <button (click)="reset()" [ngClass]="{'disabled': resetIcon}" type="button" class="btn btn-primary btn-sm pr-3 pl-3">
+            Reset server <fa-icon *ngIf="resetIcon" [icon]="['fas', 'spinner']" [spin]="true"></fa-icon>
+        </button>
+    </div>
+</div>

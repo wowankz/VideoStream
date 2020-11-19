@@ -1,0 +1,24 @@
+<div class="flex-fill  d-flex justify-content-center flex-column h-100 w-100 ">
+    <div class=" d-flex justify-content-center  ">
+        <div (click)="backward()" class="d-flex justify-content-center col-2 pr-2 pl-0 pb-2 pt-2 rounded-circle  h-100" style="cursor: pointer;">
+            <small>
+                <fa-icon [icon]="['fas', 'backward'] " size="2x" [fixedWidth]="true"></fa-icon>
+            </small>
+        </div>
+        <div (click)="play()" class="d-flex justify-content-center col-2 pr-2 pl-1 pb-2 pt-2 rounded-circle    h-100" style="cursor: pointer;">
+            <small>
+                <fa-icon  [icon]="playback === 1 ? ['fas', 'pause'] : ['fas', 'play']" size="2x" [fixedWidth]="true"></fa-icon>
+            </small>
+        </div>
+        <div (click)="stop()" class="d-flex justify-content-center col-2 pr-2 pl-1 pb-2 pt-2 rounded-circle h-100" style="cursor: pointer;">
+            <small>
+                <fa-icon [icon]="['fas', 'stop'] " size="2x" [fixedWidth]="true"></fa-icon>
+            </small>
+        </div>
+        <div (click)="forward()" class="d-flex justify-content-center col-2 pr-2 pl-1 pb-2 pt-2 rounded-circle    h-100" style="cursor: pointer;">
+            <small>
+                <fa-icon [icon]="['fas', 'forward'] " size="2x" [fixedWidth]="true"></fa-icon>
+            </small>
+        </div>
+    </div>
+</div>

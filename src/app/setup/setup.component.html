@@ -1,0 +1,15 @@
+<div class="d-flex flex-column align-items-start alert alert-warning mb-0" role="alert" style="min-height: 9rem">
+    <div class="d-flex align-items-center w-100">
+        <p class="mb-1 text-center">{{infoTextInstall}}</p>
+    </div>
+    <div class="mt-auto d-flex flex-column align-items-center w-100">
+        <button *ngIf="statusInstall == 'uncompleted' && !downloadId || !downloadExists" (click)="download()" type="button"
+            class="btn btn-primary btn-sm">{{textButton}}</button>
+        <button *ngIf="downloadId && (downloadState == 'complete') && downloadExists" (click)="open()" type="button"
+            class="btn btn-primary btn-sm pr-3 pl-3">{{textButton}}</button>
+        <div *ngIf="downloadId && (downloadState == 'in_progress')" class="progress w-100" style="height: 0.6rem;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="downloadProgress"
+                aria-valuemin="0" aria-valuemax="100" [ngStyle]="{'width': downloadProgress+'%'}">{{downloadProgress}}%</div>
+        </div>
+    </div>
+</div>

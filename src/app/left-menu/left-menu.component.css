@@ -1,0 +1,23 @@
+.left-menu {
+    font-size: 0.5rem;
+    /* color: #6c757d; */
+}
+
+.left-menu a {
+    color: #5b6b89;
+}
+
+.left-menu>div a :hover {
+    color: #4484f4 !important;
+    font-size: 0.52rem;
+    padding-right: 0rem !important;
+}
+
+.left-menu>div a :active {
+    color: #4484f4 !important;
+}
+
+.active {
+    color: #4484f4 !important;
+    font-size: 0.52rem;
+}
