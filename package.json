@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-chrome":"node build.chrome.app.js",
+    "build-chrome": "node build.chrome.app.js",
     "watch-chrome": "node watch.chrome.app.js"
   },
   "private": true,
